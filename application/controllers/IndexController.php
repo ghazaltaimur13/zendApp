@@ -75,7 +75,7 @@ class IndexController extends Zend_Controller_Action
     }
 
     public function restapiAction(){
-        $client = new Zend_Http_Client('http://localhost/zendTest/public/index.php/index/restserver');
+        $client = new Zend_Http_Client('http://localhost/zendApp/public/index.php/index/restserver');
         $response = $client->request('GET');
 
         $data = simplexml_load_string($response->getBody());
