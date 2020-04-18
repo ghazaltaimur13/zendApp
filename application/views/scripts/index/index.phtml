@@ -1,0 +1,25 @@
+<?php         
+$this->title = "Login";
+$this->headTitle($this->title);
+?>
+
+<form action="<?php echo $this->url(array('controller'=>'index', 
+        'action'=>'login'));?>" method="post">
+    <table>
+    <tr>
+        <td>Enter Username</td>
+        <td><input type="text" class="form-control" id="username"name="username" value="" placeholder="Enter Username"></td>
+    </tr>
+
+    <tr>
+        <td>Enter Password</td>
+        <td><input type="password" class="form-control" id="password" name="password" value="" placeholder="Enter Password"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </td>
+    </tr>
+    
+    </table>
+</form>

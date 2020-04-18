@@ -1,0 +1,16 @@
+
+<table>
+    <?php foreach ($this->xmlData as $key => $value){?>
+        <tr>
+            <td><?php echo $key;echo is_array($value)?></td>
+            <?php if(!is_array($value)){?>
+                <td><?php echo $value;?></td>
+            <?php } else { 
+                foreach ($value as $key1 => $value1){?>
+                    <td><?php echo $key1." : ".$value1;?></td>
+              <?php }?>
+            <?php }?>
+            
+        </tr>
+    <?php  }?>
+</table>
